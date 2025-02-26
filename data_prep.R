@@ -75,7 +75,7 @@ lsoa_loc_lookup <- pc_lsoa_loc_lookup %>%
 
 ## Pharmacies
 # Join with lookup to get official PNA Localities
-pharmacies <- read_xlsx(here("Data", "20250129 Snapshot CP lists BNSSG.xlsx"),
+pharmacies <- read_xlsx(here("Data", "20250129 Snapshot CP lists.xlsx"),
                         skip = 1) %>% 
   clean_names %>% 
   mutate(postcode = str_remove_all(postcode, " ")) %>% 
@@ -85,7 +85,7 @@ pharmacies <- read_xlsx(here("Data", "20250129 Snapshot CP lists BNSSG.xlsx"),
 
 
 ## Dispensing practices
-disp_prac <- read_xlsx(here("Data", "20250117 Dispensing Practices BNSSG.xlsx")) %>% 
+disp_prac <- read_xlsx(here("Data", "20250129 Dispensing Practices.xlsx")) %>% 
   clean_names %>% 
   
   select(practice_code, practice_address_main_site, dispensing_address_es) 
