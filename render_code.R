@@ -16,15 +16,15 @@ library(quarto) #run quarto reports
 Sys.umask("006")
 
 # Provide list of Localities to run
-loc_list <- c("Kingswood", 
-              "Severnvale",
-              "Yate",
-              "Inner City and East", 
-              "North and West", 
-              "South Bristol", 
-              "Weston and Worle", 
-              "Clevedon, Nailsea and Portishead",
-              "Rural")
+loc_list <- c("North", 
+              "West",
+              "Mid",
+              "Weymouth & Portland", 
+              "Purbeck", 
+              "East", 
+              "Canford and Creekmoor Group & Christchurch Area Group & ...", 
+              "Boscombe Group & Poole East and Bournemouth Group",
+              "Kinson and Wallisdown Group & Mid Bournemouth Group")
 
 
 # Run reports
